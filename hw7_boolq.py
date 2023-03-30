@@ -45,7 +45,7 @@ def response_bloomz(train_prompt, test_prompts, device):
     return responses
 
 def response_openai(train_prompt, test_prompts, model):
-    openai.api_key = "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"
+    openai.api_key = "OPENAI_API"
     responses = []
     for test_prompt in tqdm(test_prompts):
         response = openai.Completion.create(
